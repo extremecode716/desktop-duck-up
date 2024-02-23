@@ -62,9 +62,9 @@ class Duck:
     def change_direction(self):
         old_dir_x, old_dir_y = self.dir_x, self.dir_y
         # x축 방향을 변경합니다.
-        self.dir_x = random.choice([-1, 1])
+        self.dir_x = random.choice([-1, 0, 1])
         # y축 방향을 변경합니다.
-        self.dir_y = random.choice([-1, 1])
+        self.dir_y = random.choice([-1, 0, 1])
         print(f"방향 변경: ({old_dir_x}, {old_dir_y}) -> ({self.dir_x}, {self.dir_y})")
 
     def move_pet(self):
